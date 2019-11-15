@@ -1,10 +1,13 @@
 {
   "scripts": {
-    "dev": "nodemon --ext js,swig src/index.js",
+    "dev": "PORT=3000 nodemon --ext js,swig src/index.js",
     "start": "NODE_ENV=production node src/index.js"
   },
   "dependencies": {
     "express": "^4.17.1",
     "swig": "^1.4.2"
+  },
+  "engines": {
+    "node": "10.x"
   }
 }

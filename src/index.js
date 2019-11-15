@@ -33,4 +33,5 @@ app.get('/customer', (req, res) => {
     res.render('customers/index.swig', { customers: customers });
 });
 
-app.listen(3000);
+console.log(process.env.PORT);
+app.listen(process.env.PORT);
